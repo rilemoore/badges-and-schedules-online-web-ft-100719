@@ -30,6 +30,23 @@ def assign_rooms(speakers)
 
 end
 
-def printer(badges, room_assignments)
+def printer(names)
+  badges = batch_badge_creator(names)
+  count = 0
+  while count < badges.size
+    puts badges[count]
+  end
+  
+  room_assignments = assign_rooms(names)
+  count = 0
+  while count < room_assignments.size
+    puts room_assignments[count]
+  end
   
 end
+
+
+
+
+
+
