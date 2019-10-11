@@ -35,12 +35,14 @@ def printer(names)
   count = 0
   while count < badges.size
     puts badges[count]
+    count += 1
   end
   
   room_assignments = assign_rooms(names)
   count = 0
   while count < room_assignments.size
     puts room_assignments[count]
+    count += 1
   end
   
 end
